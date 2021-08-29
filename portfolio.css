@@ -1,0 +1,61 @@
+:root {
+  --dark: rgb(49, 73, 120);
+  --light: rgb(105, 205, 244);
+}
+
+.hero {
+  background-image: url(./Images/125768-blue-and-white-abstract-crystal-background-image.jpeg);
+  width: 100%;
+  min-height: 200px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#monogram {
+  display: block;
+  position: relative;
+  max-width: 150px;
+  max-height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 100px 50px 100px;
+}
+
+div a {
+  font-family: futura-bold;
+  font-size: 22pt;
+  color: var(--dark);
+  margin: 20px;
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+}
+
+a:hover {
+  color: var(--light);
+  text-shadow: -2px 2px 6px var(--dark);
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #monogram {
+    max-width: 100px;
+    max-height: auto;
+    margin-top: 30px;
+  }
+
+  div a {
+    font-size: 16pt;
+    align-items: center;
+  }
+}

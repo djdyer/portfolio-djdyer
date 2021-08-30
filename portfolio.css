@@ -9,53 +9,186 @@
   min-height: 200px;
   background-size: cover;
   overflow: hidden;
+  padding: 50px;
 }
 
-#monogram {
-  display: block;
-  position: relative;
-  max-width: 150px;
+#logo {
+  max-width: 120px;
   max-height: auto;
+  margin: 30px;
 }
 
 nav {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  margin: 50px 100px 50px 100px;
 }
 
 div a {
   font-family: futura-bold;
+  display: inline;
   font-size: 22pt;
   color: var(--dark);
-  margin: 20px;
+  margin: 30px;
+  text-align: center;
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--light);
+  text-shadow: -2px 4px 8px var(--dark);
 }
 
 body {
   background-color: white;
 }
 
-a:hover {
-  color: var(--light);
-  text-shadow: -2px 2px 6px var(--dark);
+h2 {
+  font-family: futura-bold;
+  text-align: center;
+  font-size: 22pt;
+  color: var(--dark);
+  margin: 100px;
+  padding: 50px;
+  border-bottom: 10px solid var(--dark);
+  transform: rotate(270deg);
+  width: 200px;
+}
+
+p {
+  color: rgb(24, 24, 24);
+  background-color: rgb(244, 244, 244);
+  padding: 20px;
+  margin-right: 50px;
+}
+
+section,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+}
+
+h3 {
+  font-family: paralucent;
+  text-align: left;
+  font-size: 20pt;
+  color: var(--dark);
+  background-color: rgb(244, 244, 244);
+  padding: 20px;
+}
+
+.work1 {
+  background-image: url(./Images/screencapture-djdyer-github-io-code-refactor-2021-08-28-10_03_25\ copy.png);
+  min-height: 600px;
+  width: 1000px;
+  background-size: contain;
+  margin: 20px;
+  border: 10px solid var(--dark);
+  padding: 40px;
+}
+
+.work2 {
+  background-image: url(./Images/vrlabs_clay_presentation.jpeg);
+  height: 300px;
+  width: 500px;
+  background-size: contain;
+  margin: 20px;
+  border: 10px solid var(--dark);
+}
+
+.work3 {
+  background-image: url(./Images/thehundreds_cover_image3.jpeg);
+  height: 300px;
+  width: 500px;
+  background-size: contain;
+  margin: 20px;
+  border: 10px solid var(--dark);
+}
+
+.work4 {
+  background-image: url(./Images/PMD016_ADVERT_BANNER_REVISED.jpeg);
+  height: 300px;
+  width: 500px;
+  background-size: contain;
+  margin: 20px;
+  border: 10px solid var(--dark);
+}
+
+.work5 {
+  background-image: url(./Images/Expanse.png);
+  height: 300px;
+  width: 500px;
+  background-size: contain;
+  margin: 20px;
+  border: 10px solid var(--dark);
+}
+
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon {
+  max-width: 50px;
+  max-height: auto;
 }
 
 @media screen and (max-width: 700px) {
   nav {
     flex-direction: column;
-    align-items: center;
+    justify-items: center;
   }
 
-  #monogram {
+  .hero {
+    padding: 25px;
+  }
+
+  #logo {
     max-width: 100px;
     max-height: auto;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
-  div a {
-    font-size: 16pt;
+  nav div a {
+    font-size: 18pt;
+    display: block;
+    margin: 30px;
+  }
+
+  h2 {
+    transform: none;
     align-items: center;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  section,
+  footer {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .work1
+  .work2
+  .work3
+  .work4
+  .work5 {
+    width: auto;
+    height: auto;
+    }
+
+    .icon {
+      width: 30px;
+      height: auto;
+    }
   }
 }

@@ -18,6 +18,25 @@
   margin: 30px;
 }
 
+/* Monogram logo plus wordmark */
+#logolockup {
+  display: flex;
+  justify-items: space-around;
+  align-items: center;
+}
+
+/* Dyer Design page title */
+h1 {
+  font-family: paralucent;
+  font-weight: bolder;
+  -webkit-text-stroke: 3px var(--light);
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: var(--light);
+  margin: 20px;
+}
+
+/* Contains all header content */
 nav {
   display: flex;
   flex-direction: row;
@@ -26,6 +45,7 @@ nav {
   align-items: center;
 }
 
+/* navigation links */
 div a {
   font-family: futura-bold;
   display: inline;
@@ -36,6 +56,7 @@ div a {
   text-decoration: none;
 }
 
+/* navigation links hover over */
 a:hover {
   color: var(--light);
   text-shadow: -2px 4px 8px var(--dark);
@@ -45,6 +66,7 @@ body {
   background-color: white;
 }
 
+/* rotated section headers with underline */
 h2 {
   font-family: futura-bold;
   text-align: center;
@@ -57,15 +79,17 @@ h2 {
   width: 200px;
 }
 
+/* about paragraph */
 p {
   color: rgb(24, 24, 24);
   background-color: rgb(244, 244, 244);
   padding: 20px;
   margin-right: 50px;
+  margin-left: 20px;
 }
 
-section,
-footer {
+/* work grid  */
+section {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -73,6 +97,13 @@ footer {
   padding: 50px;
 }
 
+/* Grid applied to bottom 4 works */
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* work image labels */
 h3 {
   font-family: paralucent;
   text-align: left;
@@ -84,16 +115,17 @@ h3 {
 
 .work1 {
   background-image: url(./Images/screencapture-djdyer-github-io-code-refactor-2021-08-28-10_03_25\ copy.png);
+  background-repeat: no-repeat;
   min-height: 600px;
   width: 1000px;
   background-size: contain;
   margin: 20px;
   border: 10px solid var(--dark);
-  padding: 40px;
 }
 
 .work2 {
   background-image: url(./Images/vrlabs_clay_presentation.jpeg);
+  background-repeat: no-repeat;
   height: 300px;
   width: 500px;
   background-size: contain;
@@ -103,6 +135,7 @@ h3 {
 
 .work3 {
   background-image: url(./Images/thehundreds_cover_image3.jpeg);
+  background-repeat: no-repeat;
   height: 300px;
   width: 500px;
   background-size: contain;
@@ -112,6 +145,7 @@ h3 {
 
 .work4 {
   background-image: url(./Images/PMD016_ADVERT_BANNER_REVISED.jpeg);
+  background-repeat: no-repeat;
   height: 300px;
   width: 500px;
   background-size: contain;
@@ -121,6 +155,7 @@ h3 {
 
 .work5 {
   background-image: url(./Images/Expanse.png);
+  background-repeat: no-repeat;
   height: 300px;
   width: 500px;
   background-size: contain;
@@ -128,14 +163,29 @@ h3 {
   border: 10px solid var(--dark);
 }
 
-#grid {
+footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgb(244, 244, 244);
+  padding: 20px;
 }
 
+/* Email + Location */
+h4 {
+  font-family: paralucent;
+  font-size: 18px;
+  color: rgb(24, 24, 24);
+  margin: 20px;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+/* Social Icons */
 .icon {
   max-width: 50px;
   max-height: auto;
+  margin: 10px;
 }
 
 @media screen and (max-width: 700px) {
@@ -155,6 +205,13 @@ h3 {
     margin-bottom: 20px;
   }
 
+  #logolockup {
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    align-items: center;
+  }
+
   nav div a {
     font-size: 18pt;
     display: block;
@@ -171,24 +228,19 @@ h3 {
   }
 
   section,
-  footer {
+  footer,
+  address {
     flex-direction: column;
     justify-content: space-around;
-    padding: 0;
   }
 
-  .work1
-  .work2
-  .work3
-  .work4
-  .work5 {
+  .work1 .work2 .work3 .work4 .work5 {
     width: auto;
     height: auto;
-    }
+  }
 
-    .icon {
-      width: 30px;
-      height: auto;
-    }
+  .icon {
+    width: 40px;
+    height: auto;
   }
 }

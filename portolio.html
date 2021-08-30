@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Resume Page</title>
+    <title>Dyer Design Portfolio</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./portfolio.css" />
   </head>
@@ -11,13 +11,17 @@
     <!-- Header and Nav -->
     <header class="hero">
       <nav>
-        <a href="https://dyer.design">
-          <img
-            id="logo"
-            src="Images/DD_logo_LARGE_NOBACK.png"
-            target="_blank"
-            alt="Dyer Design Lettermark"
-        /></a>
+        <div id="logolockup">
+          <a href="https://dyer.design">
+            <img
+              id="logo"
+              src="Images/DD_logo_LARGE_NOBACK.png"
+              target="_blank"
+              alt="Dyer Design Lettermark"
+            />
+          </a>
+          <h1>DYER DESIGN</h1>
+        </div>
         <div>
           <a href="#about">ABOUT</a>
           <a href="#work">WORK</a>
@@ -29,7 +33,7 @@
     <main>
       <!-- About me section -->
       <section>
-        <div><h2>ABOUT</h2></div>
+        <div><h2 id="about">ABOUT</h2></div>
         <div>
           <p>
             I am an artist, skateboarder, music label co-founder, and eCommerce
@@ -45,7 +49,7 @@
 
       <!-- body of work - grid of 5 -->
       <section>
-        <div><h2>WORK</h2></div>
+        <div><h2 id="work">WORK</h2></div>
         <div>
           <article class="work1">
             <a
@@ -97,8 +101,20 @@
 
       <!-- Contact Me links -->
       <footer>
-        <div><h2>CONTACT</h2></div>
+        <div><h2 id="contact">CONTACT</h2></div>
+
+        <!-- Email + Location -->
         <address>
+          <ul>
+            <h4>
+              <li>david@dyer.designs</li>
+              <li>Atlanta, GA</li>
+            </h4>
+          </ul>
+        </address>
+
+        <!-- Social Icons -->
+        <div>
           <a href="mailto:david@dyer.design">
             <img
               class="icon"
@@ -141,7 +157,7 @@
               target="_blank"
               alt="Support The Prestige Music Group"
           /></a>
-        </address>
+        </div>
       </footer>
     </main>
   </body>

@@ -69,39 +69,53 @@ body {
 /* rotated section headers with underline */
 h2 {
   font-family: futura-bold;
-  text-align: center;
   font-size: 22pt;
   color: var(--dark);
   margin: 100px;
   padding: 50px;
   border-bottom: 10px solid var(--dark);
   transform: rotate(270deg);
-  width: 200px;
+  width: 150px;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+.header-realign {
+  margin-left: -150px;
 }
 
 /* about paragraph */
 p {
   color: rgb(24, 24, 24);
   background-color: rgb(244, 244, 244);
+  font-family: paralucent;
+  font-size: 18px;
   padding: 20px;
-  margin-right: 50px;
-  margin-left: 20px;
+  width: 100%;
+  letter-spacing: 2px;
 }
 
-/* work grid  */
+/* contains three rows of content */
 section {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  display: inline-flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 50px;
 }
 
-/* Grid applied to bottom 4 works */
-#grid {
+/* Grid applied to all 5 works */
+.grid {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
+/* 
+article {
+  flex: 400px;
+} */
 
 /* work image labels */
 h3 {
@@ -110,66 +124,80 @@ h3 {
   font-size: 20pt;
   color: var(--dark);
   background-color: rgb(244, 244, 244);
-  padding: 20px;
+  padding: 10px;
+  position: absolute;
+  border-bottom: solid 2px var(--light);
+  border-top: solid 2px var(--light);
+  border-right: solid 2px var(--light);
 }
 
 .work1 {
   background-image: url(./Images/screencapture-djdyer-github-io-code-refactor-2021-08-28-10_03_25\ copy.png);
-  background-repeat: no-repeat;
   min-height: 600px;
-  width: 1000px;
-  background-size: contain;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 20px;
   border: 10px solid var(--dark);
+  filter: drop-shadow(0 2px 8px var(--dark));
 }
 
 .work2 {
   background-image: url(./Images/vrlabs_clay_presentation.jpeg);
-  background-repeat: no-repeat;
   height: 300px;
-  width: 500px;
-  background-size: contain;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 20px;
   border: 10px solid var(--dark);
+  filter: drop-shadow(0 2px 8px var(--dark));
 }
 
 .work3 {
   background-image: url(./Images/thehundreds_cover_image3.jpeg);
-  background-repeat: no-repeat;
   height: 300px;
-  width: 500px;
-  background-size: contain;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 20px;
   border: 10px solid var(--dark);
+  filter: drop-shadow(0 2px 8px var(--dark));
 }
 
 .work4 {
   background-image: url(./Images/PMD016_ADVERT_BANNER_REVISED.jpeg);
-  background-repeat: no-repeat;
   height: 300px;
-  width: 500px;
-  background-size: contain;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 20px;
   border: 10px solid var(--dark);
+  filter: drop-shadow(0 2px 8px var(--dark));
 }
 
 .work5 {
   background-image: url(./Images/Expanse.png);
-  background-repeat: no-repeat;
   height: 300px;
-  width: 500px;
-  background-size: contain;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 20px;
   border: 10px solid var(--dark);
+  filter: drop-shadow(0 2px 8px var(--dark));
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: rgb(244, 244, 244);
-  padding: 20px;
+.work1:hover,
+.work2:hover,
+.work3:hover,
+.work4:hover,
+.work5:hover {
+  border: 10px solid var(--light);
+  filter: none;
 }
+
+/* h3:hover {
+  color: var(--light);
+} */
 
 /* Email + Location */
 h4 {
@@ -186,6 +214,24 @@ h4 {
   max-width: 50px;
   max-height: auto;
   margin: 10px;
+}
+
+.icon:hover {
+  filter: drop-shadow(0 2px 6px var(--light));
+}
+
+footer {
+  align-items: center;
+  background-color: rgb(244, 244, 244);
+  padding: 50px;
+}
+
+/* footer url  */
+h6 {
+  font-family: paralucent;
+  font-size: 14px;
+  color: var(--light);
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -221,15 +267,14 @@ h4 {
   h2 {
     transform: none;
     align-items: center;
+    margin: 100px 100px 50px 100px;
   }
 
   p {
     margin: 0;
   }
 
-  section,
-  footer,
-  address {
+  section {
     flex-direction: column;
     justify-content: space-around;
   }

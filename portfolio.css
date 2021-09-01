@@ -75,13 +75,12 @@ h2 {
   padding: 50px;
   border-bottom: 10px solid var(--dark);
   transform: rotate(270deg);
-  width: 150px;
-  text-align: center;
   box-sizing: content-box;
 }
 
 .header-realign {
-  margin-left: -150px;
+  margin-left: -170px;
+  margin-right: -100px;
 }
 
 /* about paragraph */
@@ -90,9 +89,11 @@ p {
   background-color: rgb(244, 244, 244);
   font-family: paralucent;
   font-size: 18px;
-  padding: 20px;
-  width: 100%;
+  padding: 40px;
   letter-spacing: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-sizing: content-box;
 }
 
 /* contains three rows of content */
@@ -107,15 +108,91 @@ section {
 /* Grid applied to all 5 works */
 .grid {
   display: flex;
-  flex: 1;
+  flex-basis: 100%;
   flex-wrap: wrap;
-  box-sizing: border-box;
   justify-content: space-between;
+  align-content: flex-start;
 }
-/* 
-article {
-  flex: 400px;
-} */
+
+.work1 {
+  background-image: url(./Images/screencapture-djdyer-github-io-code-refactor-2021-08-28-10_03_25\ copy.png);
+  min-height: 800px;
+  flex-basis: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  border: 10px solid var(--dark);
+  filter: drop-shadow(0 2px 8px var(--dark));
+  opacity: 0.85;
+}
+
+.work2 {
+  background-image: url(./Images/vrlabs_clay_presentation.jpeg);
+  height: 300px;
+  flex-basis: 50%;
+  flex-grow: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  border: 10px solid var(--dark);
+  filter: drop-shadow(0 2px 8px var(--dark));
+  opacity: 0.85;
+}
+
+.work3 {
+  background-image: url(./Images/thehundreds_cover_image3.jpeg);
+  height: 300px;
+  flex-basis: 50%;
+  flex-grow: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  border: 10px solid var(--dark);
+  filter: drop-shadow(0 2px 8px var(--dark));
+  opacity: 0.85;
+}
+
+.work4 {
+  background-image: url(./Images/PMD016_ADVERT_BANNER_REVISED.jpeg);
+  height: 300px;
+  flex-basis: 50%;
+  flex-grow: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  border: 10px solid var(--dark);
+  filter: drop-shadow(0 2px 8px var(--dark));
+  opacity: 0.85;
+}
+
+.work5 {
+  background-image: url(./Images/Expanse.png);
+  height: 300px;
+  flex-basis: 50%;
+  flex-grow: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  border: 10px solid var(--dark);
+  filter: drop-shadow(0 2px 8px var(--dark));
+  opacity: 0.85;
+}
+
+.work1:hover,
+.work2:hover,
+.work3:hover,
+.work4:hover,
+.work5:hover {
+  border: 10px solid var(--light);
+  opacity: 1;
+  filter: drop-shadow(0 0 0);
+}
+
+#nowrapgrid {
+  display: inline-flex;
+  flex-basis: 100%;
+  flex-wrap: nowrap;
+}
 
 /* work image labels */
 h3 {
@@ -126,76 +203,14 @@ h3 {
   background-color: rgb(244, 244, 244);
   padding: 10px;
   position: absolute;
-  border-bottom: solid 2px var(--light);
+  bottom: 0px;
   border-top: solid 2px var(--light);
   border-right: solid 2px var(--light);
 }
 
-.work1 {
-  background-image: url(./Images/screencapture-djdyer-github-io-code-refactor-2021-08-28-10_03_25\ copy.png);
-  min-height: 600px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 20px;
-  border: 10px solid var(--dark);
-  filter: drop-shadow(0 2px 8px var(--dark));
-}
-
-.work2 {
-  background-image: url(./Images/vrlabs_clay_presentation.jpeg);
-  height: 300px;
-  width: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 20px;
-  border: 10px solid var(--dark);
-  filter: drop-shadow(0 2px 8px var(--dark));
-}
-
-.work3 {
-  background-image: url(./Images/thehundreds_cover_image3.jpeg);
-  height: 300px;
-  width: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 20px;
-  border: 10px solid var(--dark);
-  filter: drop-shadow(0 2px 8px var(--dark));
-}
-
-.work4 {
-  background-image: url(./Images/PMD016_ADVERT_BANNER_REVISED.jpeg);
-  height: 300px;
-  width: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 20px;
-  border: 10px solid var(--dark);
-  filter: drop-shadow(0 2px 8px var(--dark));
-}
-
-.work5 {
-  background-image: url(./Images/Expanse.png);
-  height: 300px;
-  width: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 20px;
-  border: 10px solid var(--dark);
-  filter: drop-shadow(0 2px 8px var(--dark));
-}
-
-.work1:hover,
-.work2:hover,
-.work3:hover,
-.work4:hover,
-.work5:hover {
-  border: 10px solid var(--light);
-  filter: none;
-}
-
-/* h3:hover {
+/* 
+MAKE THIS WORK FOR ENTIRE CARD
+h3:hover 
   color: var(--light);
 } */
 
@@ -220,20 +235,37 @@ h4 {
   filter: drop-shadow(0 2px 6px var(--light));
 }
 
+/* footer url  */
 footer {
-  align-items: center;
   background-color: rgb(244, 244, 244);
   padding: 50px;
 }
 
-/* footer url  */
-h6 {
+footer a {
+  color: var(--light);
+  text-decoration: none;
   font-family: paralucent;
   font-size: 14px;
-  color: var(--light);
+  letter-spacing: 2px;
+}
+
+h6 {
   text-align: center;
 }
 
+footer h6 a:hover {
+  color: var(--dark);
+}
+
+/* Large display to tablet view  */
+@media screen and (max-width: 1200px) {
+  #nowrapgrid {
+    flex-direction: column;
+    height: 1200px;
+  }
+}
+
+/* Mobile view kicks in at 700px */
 @media screen and (max-width: 700px) {
   nav {
     flex-direction: column;
@@ -266,8 +298,11 @@ h6 {
 
   h2 {
     transform: none;
-    align-items: center;
-    margin: 100px 100px 50px 100px;
+  }
+
+  .header-realign {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   p {
@@ -277,15 +312,44 @@ h6 {
   section {
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    padding: 0;
   }
 
-  .work1 .work2 .work3 .work4 .work5 {
-    width: auto;
-    height: auto;
+  .work1,
+  .work2,
+  .work3,
+  .work4,
+  .work5 {
+    width: 100%;
+    justify-items: center;
+    margin: 40px 0 40px 0;
+  }
+
+  .work1 {
+    margin: 0;
+  }
+
+  .grid {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #nowrapgrid {
+    display: block;
   }
 
   .icon {
     width: 40px;
     height: auto;
+    margin: 10px;
+  }
+
+  address h4 {
+    margin-bottom: 60px;
+  }
+
+  section div a {
+    margin: 0;
   }
 }

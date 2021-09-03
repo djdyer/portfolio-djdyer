@@ -27,13 +27,13 @@
 
 /* Dyer Design page title */
 h1 {
-  font-family: paralucent;
-  font-weight: bolder;
-  -webkit-text-stroke: 3px var(--light);
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  -webkit-text-stroke: 1px var(--light);
   letter-spacing: 2px;
   font-size: 40px;
   color: var(--light);
   margin: 20px;
+  text-shadow: 0 0 10px var(--light);
 }
 
 /* Contains all header content */
@@ -46,7 +46,7 @@ nav {
 }
 
 /* navigation links */
-div a {
+header a {
   font-family: futura-bold;
   display: inline;
   font-size: 22pt;
@@ -57,7 +57,7 @@ div a {
 }
 
 /* navigation links hover over */
-a:hover {
+header a:hover {
   color: var(--light);
   text-shadow: -2px 4px 8px var(--dark);
 }
@@ -87,7 +87,7 @@ h2 {
 p {
   color: rgb(24, 24, 24);
   background-color: rgb(244, 244, 244);
-  font-family: paralucent;
+  font-family: "Work Sans", sans-serif;
   font-size: 18px;
   padding: 40px;
   letter-spacing: 2px;
@@ -96,13 +96,16 @@ p {
   box-sizing: content-box;
 }
 
-/* contains three rows of content */
+/* three rows: ABOUT / WORK / CONTACT */
 section {
   display: inline-flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 50px;
+}
+
+article {
+  display: block;
 }
 
 /* Grid applied to all 5 works */
@@ -126,7 +129,10 @@ section {
   opacity: 0.85;
 }
 
-.work2 {
+.work2,
+.work3,
+.work4,
+.work5 {
   background-image: url(./Images/vrlabs_clay_presentation.jpeg);
   height: 300px;
   flex-basis: 50%;
@@ -141,41 +147,14 @@ section {
 
 .work3 {
   background-image: url(./Images/thehundreds_cover_image3.jpeg);
-  height: 300px;
-  flex-basis: 50%;
-  flex-grow: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 20px;
-  border: 10px solid var(--dark);
-  filter: drop-shadow(0 2px 8px var(--dark));
-  opacity: 0.85;
 }
 
 .work4 {
   background-image: url(./Images/PMD016_ADVERT_BANNER_REVISED.jpeg);
-  height: 300px;
-  flex-basis: 50%;
-  flex-grow: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 20px;
-  border: 10px solid var(--dark);
-  filter: drop-shadow(0 2px 8px var(--dark));
-  opacity: 0.85;
 }
 
 .work5 {
   background-image: url(./Images/Expanse.png);
-  height: 300px;
-  flex-basis: 50%;
-  flex-grow: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 20px;
-  border: 10px solid var(--dark);
-  filter: drop-shadow(0 2px 8px var(--dark));
-  opacity: 0.85;
 }
 
 .work1:hover,
@@ -196,7 +175,7 @@ section {
 
 /* work image labels */
 h3 {
-  font-family: paralucent;
+  font-family: "Work Sans", sans-serif;
   text-align: left;
   font-size: 20pt;
   color: var(--dark);
@@ -207,12 +186,6 @@ h3 {
   border-top: solid 2px var(--light);
   border-right: solid 2px var(--light);
 }
-
-/* 
-MAKE THIS WORK FOR ENTIRE CARD
-h3:hover 
-  color: var(--light);
-} */
 
 /* Email + Location */
 h4 {
@@ -235,7 +208,6 @@ h4 {
   filter: drop-shadow(0 2px 6px var(--light));
 }
 
-/* footer url  */
 footer {
   background-color: rgb(244, 244, 244);
   padding: 50px;
@@ -253,20 +225,36 @@ h6 {
   text-align: center;
 }
 
+#contactflex {
+  display: flex;
+  justify-self: flex-start;
+  margin-top: 80px;
+  margin-left: -20px;
+}
+
+address {
+  margin: 20px;
+  text-align: center;
+}
+
 footer h6 a:hover {
   color: var(--dark);
 }
 
-/* Large display to tablet view  */
+/* From large display to tablet view  */
 @media screen and (max-width: 1200px) {
   #nowrapgrid {
     flex-direction: column;
     height: 1200px;
   }
+
+  .work1 {
+    min-height: 300px;
+  }
 }
 
-/* Mobile view kicks in at 700px */
-@media screen and (max-width: 700px) {
+/* Mobile view kicks in at 800px */
+@media screen and (max-width: 800px) {
   nav {
     flex-direction: column;
     justify-items: center;
@@ -290,7 +278,7 @@ footer h6 a:hover {
     align-items: center;
   }
 
-  nav div a {
+  header a {
     font-size: 18pt;
     display: block;
     margin: 30px;
@@ -349,7 +337,11 @@ footer h6 a:hover {
     margin-bottom: 60px;
   }
 
-  section div a {
-    margin: 0;
+  footer {
+    margin-top: 40px;
+  }
+
+  #footerflex {
+    margin-left: 0px;
   }
 }

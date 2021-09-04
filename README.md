@@ -14,6 +14,7 @@
 <li>Assets Folder</li>
 <li>ReadMe</li>
 
+<br />
 <img src="./Images/presentation.png">
 
 ## User Story
@@ -44,7 +45,7 @@ Features responsive sizing for desktop and mobile views.
 
 ## Deployed URL:
 
-<a href="https://github.com/djdyer/portfolio-djdyer">
-<a href="https://djdyer.github.io/portfolio-djdyer">
+<a href="https://github.com/djdyer/portfolio-djdyer"></a>
+<a href="https://djdyer.github.io/portfolio-djdyer"></a>
 
 <br />

@@ -46,6 +46,7 @@ Features responsive sizing for desktop and mobile views.
 ## Deployed URL:
 
 https://github.com/djdyer/portfolio-djdyer
+<br />
 https://djdyer.github.io/portfolio-djdyer
 
 <br />

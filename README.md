@@ -14,6 +14,8 @@
 <li>Assets Folder</li>
 <li>ReadMe</li>
 
+<img src="./Images/presentation.png">
+
 ## User Story
 
 ```

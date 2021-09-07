@@ -4,15 +4,13 @@
 
 ## Repo Contents
 
+<li>ReadMe</li>
 <li>Images Folder</li>
 <li>Assets Folder</li>
 <li>HTML</li>
 <li>CSS Styling</li>
 <li>CSS Reset</li>
 <li>Wireframes Folder</li>
-<li>Images Folder</li>
-<li>Assets Folder</li>
-<li>ReadMe</li>
 
 <br />
 <img src="./Images/presentation.png">

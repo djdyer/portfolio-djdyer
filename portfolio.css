@@ -117,8 +117,19 @@ article {
   align-content: flex-start;
 }
 
+/* work image labels */
+h3 {
+  font-family: "Work Sans", sans-serif;
+  text-align: left;
+  font-size: 22pt;
+  color: var(--light);
+  background-color: var(--dark);
+  padding: 10px;
+  position: absolute;
+}
+
 .work1 {
-  background-image: url(./Images/screencapture-djdyer-github-io-code-refactor-2021-08-28-10_03_25\ copy.png);
+  background-image: url(./Images/pokego_cover_image\ copy.png);
   min-height: 800px;
   flex-basis: 100%;
   background-size: cover;
@@ -126,14 +137,14 @@ article {
   margin: 20px;
   border: 10px solid var(--dark);
   filter: drop-shadow(0 2px 8px var(--dark));
-  opacity: 0.85;
+  opacity: 1.5;
 }
 
 .work2,
 .work3,
 .work4,
 .work5 {
-  background-image: url(./Images/vrlabs_clay_presentation.jpeg);
+  background-image: url(./Images/rainorShine_cover_image2\ copy.png);
   height: 300px;
   flex-basis: 50%;
   flex-grow: 0;
@@ -142,19 +153,19 @@ article {
   margin: 20px;
   border: 10px solid var(--dark);
   filter: drop-shadow(0 2px 8px var(--dark));
-  opacity: 0.85;
+  opacity: 1.5;
 }
 
 .work3 {
-  background-image: url(./Images/thehundreds_cover_image3.jpeg);
+  background-image: url(./Images/code_quiz_cover_image\ copy.jpg);
 }
 
 .work4 {
-  background-image: url(./Images/PMD016_ADVERT_BANNER_REVISED.jpeg);
+  background-image: url(./Images/vrlabs_clay_presentation.jpeg);
 }
 
 .work5 {
-  background-image: url(./Images/Expanse.png);
+  background-image: url(./Images/Untitled_Artwork\ copy\ 2.png);
 }
 
 .work1:hover,
@@ -164,6 +175,8 @@ article {
 .work5:hover {
   border: 10px solid var(--light);
   opacity: 1;
+  background-color: var(--light);
+  color: var(--dark);
   filter: drop-shadow(0 0 0);
 }
 
@@ -171,20 +184,6 @@ article {
   display: inline-flex;
   flex-basis: 100%;
   flex-wrap: nowrap;
-}
-
-/* work image labels */
-h3 {
-  font-family: "Work Sans", sans-serif;
-  text-align: left;
-  font-size: 20pt;
-  color: var(--dark);
-  background-color: rgb(244, 244, 244);
-  padding: 10px;
-  position: absolute;
-  bottom: 0px;
-  border-top: solid 2px var(--light);
-  border-right: solid 2px var(--light);
 }
 
 /* Email + Location */

@@ -198,8 +198,8 @@ h4 {
 
 /* Social Icons */
 .icon {
-  max-width: 50px;
-  max-height: auto;
+  max-width: auto;
+  max-height: 50px;
   margin: 10px;
 }
 
@@ -327,8 +327,8 @@ footer h6 a:hover {
   }
 
   .icon {
-    width: 40px;
-    height: auto;
+    width: auto;
+    height: 40px;
     margin: 10px;
   }
 
@@ -342,5 +342,14 @@ footer h6 a:hover {
 
   #footerflex {
     margin-left: 0px;
+  }
+
+  #contactflex {
+    margin-left: 0;
+  }
+
+  #socials {
+    text-align: center;
+    margin-bottom: 40px;
   }
 }

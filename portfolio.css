@@ -129,7 +129,7 @@ h3 {
 }
 
 .work1 {
-  background-image: url(./Images/pokego_cover_image\ copy.png);
+  background-image: url(./Images/material_trader_mobiles.png);
   min-height: 800px;
   flex-basis: 100%;
   background-size: cover;
@@ -144,7 +144,7 @@ h3 {
 .work3,
 .work4,
 .work5 {
-  background-image: url(./Images/rainorShine_cover_image2\ copy.png);
+  background-image: url(./Images/tech_bros_home_demo.jpg);
   height: 300px;
   flex-basis: 50%;
   flex-grow: 0;
@@ -157,15 +157,15 @@ h3 {
 }
 
 .work3 {
-  background-image: url(./Images/code_quiz_cover_image\ copy.jpg);
+  background-image: url(./Images/pokego_mobile.png);
 }
 
 .work4 {
-  background-image: url(./Images/vrlabs_clay_presentation.jpeg);
+  background-image: url(./Images/rainorshine_day.png);
 }
 
 .work5 {
-  background-image: url(./Images/Untitled_Artwork\ copy\ 2.png);
+  background-image: url(./Images/code_quiz.jpg);
 }
 
 .work1:hover,
